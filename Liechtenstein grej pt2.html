@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liechtenstein</title>
+  <style>
+      #headline {
+          background-color: purple;
+          text-align: center;
+          padding: 20px 0;
+          color: white;
+      }
+      
+      #headline h1 {
+          margin: 0;
+          font-size: 32px;
+      }
+      
+      .container {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 30px;
+          flex-wrap: wrap; 
+      }
+      
+      .box-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 40px;
+      }
+      
+      .box {
+          background-color: #1070f6;
+          padding: 20px;
+          margin-bottom: 20px;
+          width: 150px;
+          height: 20px;
+          text-align: center;
+          color: white;
+      }
+      
+      .box p {
+          margin: 0;
+          font-size: 20px;
+      }
+      
+      #text {
+          font-size: 18px;
+          flex: 1;
+      }
+      
+      #faktaruta {
+          border: 2px solid #1070f6;
+          padding: 20px;
+          padding-top: 1px;
+          color: black;
+          font-size: 16px;
+          width: 90%; 
+      }
+      
+      #textirutan {
+          font-size: 16px;
+      }
+
+      
+      @media screen and (max-width: 600px) {
+          #headline h1 {
+              font-size: 24px; 
+          }
+          
+          .container {
+              flex-direction: column; 
+              align-items: center; 
+            
+          }
+          
+          .box {
+              width:300px;
+              text-align: left;
+            
+                  
+          }
+          
+          #faktaruta {
+              font-size: 14px; 
+              padding-right: 10px;
+          }
+            
+        }
+        @media screen and (min-width: 800px){
+            .container {
+                flex-direction: row;
+            }
+        }
+  </style>
+</head>
+<body>
+  <div id="headline">
+      <h1>Liechtenstein</h1>
+  </div>
+  <div class="container">
+      <div class="box-container">
+          <div class="box">
+              <p>The Flight</p>
+          </div>
+          <div class="box">
+              <p>The City</p>
+          </div>
+          <div class="box">
+              <p>The Island</p>
+          </div>
+          <div class="box">
+              <p>The Food</p>
+          </div>
+      </div>
+      <div id="text">
+          <p>Liechtenstein är en självständig konstitutionell monarki i Alperna i Centraleuropa, belägen mellan Schweiz och Österrike.</p>
+          <p>Liechtenstein är en av Europas mikrostater. Statschefen har stor makt och kan bland annat inlägga veto mot nya lagar.</p>
+          <p>Liechtenstein har den näst högsta inkomsten per capita i Europa, efter Monaco.</p>
+      </div>
+  </div>
+  <div id="faktaruta">
+      <p><b>Facts:</b></p>
+      <div id="textirutan">
+          <li>Ställningen som finanscentrum och skatteparadis har gjort det till ett av världens rikaste länder räknat per invånare.</li>
+          <li>Den officiella valutan är schweiziska franc, men euro accepteras också.</li>
+      </div>
+  </div>
+</body>
+</html>
